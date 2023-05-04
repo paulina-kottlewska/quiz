@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #F5F7FB;
+}
+
+/* Main Container */
+.container {
+  background: url(../public/light-yellow.png) no-repeat right top, url(../public/light-blue.png) no-repeat left bottom;
+  padding: 1.25em;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* First Page */
+.quiz-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #293264;
+  margin-bottom: 0.2em;
+}
+
+.quiz-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25em;
+  color: #293264;
+  margin-bottom: 3.1em;
+}
+
+.start-btn {
+  width: 165px;
+  height: 50px;
+  font-size: 1.25em;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border-radius: 1.6em;
+  border: none;
+}
+
+/* Questions and answers */
+.questions-container {
+  max-width: 700px;
+  padding: 0.75em;
+}
+
+.question {
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+  font-weight: bold;
+  font-size: 1em;
+  color: #293264;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.9px solid #DBDEF0;
+}
+
+.answers {
+  min-width: 90px;
+  max-width: auto;
+  min-height: 25px;
+  max-height: auto;
+  margin-right: 0.75em;
+  margin-bottom: 1.1em;
+  padding: 0.3em 0.6em;
+  border: 0.8px solid #4D5B9E;
+  border-radius: 0.9em;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  color: #293264;
+}
+
+/* Buttons container */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.6em;
+}
+
+.check-btn, .play-btn {
+  width: 130px;
+  height: 40px;
+  font-size: 0.78em;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border-radius: 1.6em;
+  border: none;  
+}
+
+.check-btn:disabled {
+  opacity: 0.5;
+}
+
+.score {
+  margin-right: 1.25em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 775px) {
+  .container {
+    min-height: 100vh;
+    height: auto;
+  }
+  .buttons-container {
+    flex-direction: column;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .answers {
+    min-width: 300px;
+    max-width: auto;
+  }
+  .question {
+    text-align: center;
+  }
+}
