@@ -2,7 +2,11 @@
 
 This project features a quiz that generates questions and answers using the Fetch API. Users are presented with five questions, with a choice of multiple-choice or true/false answers. After selecting all the answers, users can verify their correctness by clicking the "Check answers" button. If they choose to play again, the quiz will load a new set of questions. I developed this project during the Learn React course on the Scrimba platform. For this assignment, only a Figma design template was provided, along with the teacher's explanation of the desired website functionality.
 
-Technologies used:
+### Link
+
+- Live Site URL: https://quizzical-pk.netlify.app/
+  
+### Technologies used:
 
 * React
 * JavaScript
